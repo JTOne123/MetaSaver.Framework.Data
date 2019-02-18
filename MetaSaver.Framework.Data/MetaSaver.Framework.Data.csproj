@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.1-beta</Version>
+    <Version>0.0.2-beta</Version>
     <Authors>Jim Nightingale</Authors>
     <Company>MetaSaver</Company>
     <Description>Part of the MetaSaver framework that handles database connections</Description>
@@ -12,7 +12,10 @@
     <PackageProjectUrl>http://github.com/metasaver/MetaSaver.Framework.Data</PackageProjectUrl>
     <PackageIconUrl>https://avatars1.githubusercontent.com/u/39343088?s=460&amp;v=4</PackageIconUrl>
     <RepositoryUrl>http://github.com/metasaver/MetaSaver.Framework.Data</RepositoryUrl>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageReleaseNotes>Added application icon</PackageReleaseNotes>
+    <ApplicationIcon>metasaverall.ico</ApplicationIcon>
+    <AssemblyVersion>0.0.2.0</AssemblyVersion>
+    <FileVersion>0.0.2.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
