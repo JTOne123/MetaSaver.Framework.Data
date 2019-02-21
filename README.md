@@ -21,7 +21,8 @@ MetaSaver.Framework has several top level goals:
 Add the following example node to your AppSettings.json file and each subnode part of the MetaSaver
 framework that you wish to use.
 
-`{
+```javascrip
+{
     "AppSettings": {
 ...
         "Connections": {
@@ -29,7 +30,8 @@ framework that you wish to use.
         },
 ...
     },
-`}
+}
+```
 
 ### Connections
 List of connection strings to use for the MetaSaver framework
