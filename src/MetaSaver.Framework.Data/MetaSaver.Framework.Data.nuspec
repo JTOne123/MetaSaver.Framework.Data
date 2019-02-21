@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>MetaSaver.Framework.Data</id>
+        <version>0.0.0</version>
+        <description>Part of the MetaSaver framework that handles database connections with automatic retries</description>
+        <authors>Jim Nightingale</authors>
+
+        <title>MetaSaver.Framework.Data</title>
+        <owners>MetaSaver LLC</owners>
+        <projectUrl>http://github.com/metasaver/MetaSaver.Framework.Data</projectUrl>
+        <license type="expression">GPL-3.0-or-later</license>
+        <iconUrl>https://avatars1.githubusercontent.com/u/39343088?s=460&amp;v=4</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <summary>Database connectivity for the MetaSaver Framework</summary>
+        <releaseNotes>See project on Github</releaseNotes>
+        <copyright>Copyright ©2019 MetaSaver LLC</copyright>
+        <tags>contextmanager sqlserver retrypolicy</tags>
+    </metadata>
+</package>
