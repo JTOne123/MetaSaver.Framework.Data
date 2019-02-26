@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using MetaSaver.Framework.Configuration;
 using Microsoft.Extensions.Options;
@@ -13,7 +14,8 @@ namespace MetaSaver.Framework.Data
 
     public interface IModelBulkCopy
     {
-        void WriteToServer<T>(IEnumerable<T> models, string tableName, SqlConnection connection) where T : class, new();
+        void WriteToServer<T>(IEnumerable<T> models, string tableName, IDbConnection connection)
+            where T : class, new();
     }
 
     #endregion
@@ -41,7 +43,7 @@ namespace MetaSaver.Framework.Data
 
         #region WriteToServer
 
-        public void WriteToServer<T>(IEnumerable<T> models, string tableName, SqlConnection connection)
+        public void WriteToServer<T>(IEnumerable<T> models, string tableName, IDbConnection connection)
             where T : class, new()
         {
             using (var bulkCopy = new SqlBulkCopy(connection.ConnectionString))
