@@ -6,6 +6,7 @@ using Microsoft.Extensions.Options;
 using Polly;
 using Polly.Retry;
 
+// ReSharper disable once CheckNamespace
 namespace MetaSaver.Framework.Data
 {
     #region Interface
@@ -34,7 +35,7 @@ namespace MetaSaver.Framework.Data
 
         public ContextManager(IOptions<BaseAppSettings> appSettings)
         {
-            ConnectionString = appSettings.Value.Connections.Database;
+            ConnectionString = appSettings.Value.Data.Database;
 
             _policy = Policy.Handle<Exception>().WaitAndRetry(
                 10,

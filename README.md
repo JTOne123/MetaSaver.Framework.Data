@@ -25,16 +25,23 @@ framework that you wish to use.
 {
     "AppSettings": {
 ...
-        "Connections": {
+        "Data": {
             "Database": "Your connection string"
+            "BulkCopy": {
+                "Timeout": 600,
+                "BatchSize": 500
+            }
         },
 ...
     },
 }
 ```
 
-### Connections
-List of connection strings to use for the MetaSaver framework
+### Data
+List of data settings to be used with MetaSaver.Framework.Data
 
 #### Database
 SQL Server connection string to be used with MetaSaver.Framework.Data.ContextManager
+
+#### BulkCopy
+SQL Server connection string to be used with MetaSaver.Framework.Data.ModelMapper

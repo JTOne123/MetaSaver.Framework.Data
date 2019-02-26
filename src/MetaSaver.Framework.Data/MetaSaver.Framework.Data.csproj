@@ -26,7 +26,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="MetaSaver.Framework.Configuration" Version="0.0.10-beta" />
+        <PackageReference Include="FastMember" Version="1.4.1" />
+        <PackageReference Include="MetaSaver.Framework.Configuration" Version="0.1.1-beta" />
         <PackageReference Include="Microsoft.Extensions.Options" Version="3.0.0-preview.19074.2" />
         <PackageReference Include="Polly" Version="7.0.3" />
         <PackageReference Include="System.Data.SqlClient" Version="4.7.0-preview.19073.11" />
