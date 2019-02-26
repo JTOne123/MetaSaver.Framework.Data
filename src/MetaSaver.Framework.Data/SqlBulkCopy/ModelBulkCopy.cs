@@ -9,7 +9,18 @@ using Microsoft.Extensions.Options;
 // ReSharper disable once CheckNamespace
 namespace MetaSaver.Framework.Data
 {
-    public class ModelBulkCopy
+    #region Interface
+
+    public interface IModelBulkCopy
+    {
+        void WriteToServer<T>(IEnumerable<T> models, string tableName, SqlConnection connection) where T : class, new();
+    }
+
+    #endregion
+
+    #region Class
+
+    public class ModelBulkCopy : IModelBulkCopy
     {
         #region Locals
 
@@ -47,4 +58,6 @@ namespace MetaSaver.Framework.Data
 
         #endregion
     }
+
+    #endregion
 }

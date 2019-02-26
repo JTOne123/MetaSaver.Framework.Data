@@ -8,8 +8,12 @@ using System.Linq;
 // ReSharper disable once CheckNamespace
 namespace MetaSaver.Framework.Data
 {
+    #region Class
+
     public static class ModelMapper
     {
+        #region MapModel
+
         public static DataTable MapModel<T>(IEnumerable<T> models, string tableName) where T : class, new()
         {
             var enumerable = models as IList<T> ?? models.ToList();
@@ -63,5 +67,9 @@ namespace MetaSaver.Framework.Data
 
             return result;
         }
+
+        #endregion
     }
+
+    #endregion
 }
