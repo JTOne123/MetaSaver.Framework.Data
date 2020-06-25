@@ -23,7 +23,16 @@
         <PackageIconUrl>https://avatars1.githubusercontent.com/u/39343088?s=460&amp;v=4</PackageIconUrl>
         <PackageReleaseNotes>See project on Github</PackageReleaseNotes>
         <PackageTags>contextmanager sqlserver retrypolicy</PackageTags>
-    </PropertyGroup>
+    
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
     <ItemGroup>
         <PackageReference Include="FastMember" Version="1.4.1" />
